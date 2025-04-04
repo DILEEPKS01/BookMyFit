@@ -9,10 +9,6 @@ React<br/>
 JavaScript<br/>
 TailwindCSS<br/>
 
-## Demo
-
-<a href='https://app.netlify.com/sites/courageous-meerkat-57b6d0/deploys'>BookMyFit.netlify.app</a>
-
 ## Screenshot
 
 <img align="center" alt="readme_image" src="assets/ui.png" />
