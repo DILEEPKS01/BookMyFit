@@ -11,7 +11,7 @@ TailwindCSS<br/>
 
 ## Demo
 
-<a href='https://BookMyFit.netlify.app/'>BookMyFit.netlify.app</a>
+<a href='[![Netlify Status](https://api.netlify.com/api/v1/badges/89ecd020-4d1a-4c3a-ada9-198f57c958cc/deploy-status)](https://app.netlify.com/sites/courageous-meerkat-57b6d0/deploys)'>BookMyFit.netlify.app</a>
 
 ## Screenshot
 
