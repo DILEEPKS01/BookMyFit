@@ -11,7 +11,7 @@ TailwindCSS<br/>
 
 ## Demo
 
-<a href='https://core-fit.netlify.app/'>BookMyFit.netlify.app</a>
+<a href='https://BookMyFit.netlify.app/'>BookMyFit.netlify.app</a>
 
 ## Screenshot
 
