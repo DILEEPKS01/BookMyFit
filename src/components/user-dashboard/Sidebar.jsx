@@ -5,11 +5,7 @@ import logoBlack from '../../images/logo/l4.png';
 export default function Sidebar() {
   return (
     <div className="bg-white h-screen w-64 shadow-lg">
-      <div className="p-6">
-        <img src={logoBlack} alt="BookMyFit" className="w-32 h-auto" />
-        <h2 className="text-2xl font-bold text-red mt-4">Dashboard</h2>
-      </div>
-      <nav className="mt-8">
+      <nav className="mt-4">
         <Link to="/user-dashboard" className="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-100">
           <FiHome className="mr-3" /> Overview
         </Link>
