@@ -6,6 +6,8 @@ import Schedule from "./Pages/Schedule";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Classes from "./Pages/Classes";
+import AdminDashboard from "./Pages/AdminDashboard";
+import UserDashboard from "./Pages/UserDashboard";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="classes" element={<Classes />} />
+        <Route path="admin-dashboard" element={<AdminDashboard />} />
+        <Route path="user-dashboard" element={<UserDashboard />} />
       </Routes>
       <Footer />
       <ScrollToTop />
