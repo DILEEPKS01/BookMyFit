@@ -1,9 +1,10 @@
 
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { FiActivity, FiCalendar, FiClock, FiTrendingUp } from 'react-icons/fi';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import Sidebar from '../components/user-dashboard/Sidebar';
 import StatsCard from '../components/user-dashboard/StatsCard';
+import Profile from '../components/user-dashboard/Profile';
 
 export default function UserDashboard() {
   // Mock data for the chart
@@ -22,7 +23,10 @@ export default function UserDashboard() {
       <Sidebar />
       
       <div className="flex-1 p-8">
-        <h1 className="text-3xl font-bold mb-8">Welcome back, User!</h1>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <h1 className="text-3xl font-bold mb-8">Welcome back, User!</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <StatsCard title="Total Workouts" value="28" icon={<FiActivity />} />
@@ -45,6 +49,10 @@ export default function UserDashboard() {
             </ResponsiveContainer>
           </div>
         </div>
+          </>
+          } />
+          <Route path="profile" element={<Profile />} />
+        </Routes>
       </div>
     </div>
   );

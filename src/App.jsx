@@ -24,7 +24,7 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="classes" element={<Classes />} />
         <Route path="admin-dashboard" element={<AdminDashboard />} />
-        <Route path="user-dashboard" element={<UserDashboard />} />
+        <Route path="user-dashboard/*" element={<UserDashboard />} />
         <Route path="login" element={<Login />} /> {/* Added Login route */}
       </Routes>
       {window.location.pathname !== '/admin-dashboard' && window.location.pathname !== '/user-dashboard' && <Footer />}
