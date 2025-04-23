@@ -27,7 +27,7 @@ function App() {
         <Route path="user-dashboard" element={<UserDashboard />} />
         <Route path="login" element={<Login />} /> {/* Added Login route */}
       </Routes>
-      {window.location.pathname !== '/admin-dashboard' && <Footer />}
+      {window.location.pathname !== '/admin-dashboard' && window.location.pathname !== '/user-dashboard' && <Footer />}
       <ScrollToTop />
     </>
   );
