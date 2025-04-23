@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { FiHome, FiUser, FiCalendar, FiCreditCard, FiBell } from 'react-icons/fi';
-import Logo from '../logo/Logo';
+import logoBlack from '../../images/logo/l4.png';
 
 export default function Sidebar() {
   return (
     <div className="bg-white h-screen w-64 shadow-lg">
       <div className="p-6">
-        <Logo type="black" />
+        <img src={logoBlack} alt="BookMyFit" className="w-32 h-auto" />
         <h2 className="text-2xl font-bold text-red mt-4">Dashboard</h2>
       </div>
       <nav className="mt-8">
