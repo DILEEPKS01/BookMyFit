@@ -25,7 +25,7 @@ function App() {
         <Route path="admin-dashboard" element={<AdminDashboard />} />
         <Route path="user-dashboard" element={<UserDashboard />} />
       </Routes>
-      <Footer />
+      {window.location.pathname !== '/admin-dashboard' && <Footer />}
       <ScrollToTop />
     </>
   );
