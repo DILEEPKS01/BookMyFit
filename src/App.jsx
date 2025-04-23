@@ -10,6 +10,7 @@ import AdminDashboard from "./Pages/AdminDashboard";
 import UserDashboard from "./Pages/UserDashboard";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Login from "./Pages/Login"; // Import the Login component
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="classes" element={<Classes />} />
         <Route path="admin-dashboard" element={<AdminDashboard />} />
         <Route path="user-dashboard" element={<UserDashboard />} />
+        <Route path="login" element={<Login />} /> {/* Added Login route */}
       </Routes>
       {window.location.pathname !== '/admin-dashboard' && <Footer />}
       <ScrollToTop />
