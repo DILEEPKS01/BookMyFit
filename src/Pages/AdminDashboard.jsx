@@ -31,10 +31,7 @@ function AdminDashboard() {
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-xl">
-        <div className="p-4">
-          <h2 className="text-2xl font-bold text-red">CoreFit Admin</h2>
-        </div>
-        <nav className="mt-8">
+        <nav className="mt-4">
           <button 
             onClick={() => setActiveTab('overview')}
             className={`flex w-full items-center px-6 py-3 text-left ${activeTab === 'overview' ? 'bg-red text-white' : 'hover:bg-gray-100'}`}
