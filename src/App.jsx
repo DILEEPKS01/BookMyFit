@@ -13,9 +13,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import Login from "./Pages/Login"; // Import the Login component
 
 function App() {
+  const hideNavBar = window.location.pathname === '/admin-dashboard';
+  
   return (
     <>
-      <NavBar />
+      {!hideNavBar && <NavBar />}
       <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
